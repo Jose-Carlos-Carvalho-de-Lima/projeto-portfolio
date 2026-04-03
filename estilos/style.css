@@ -246,12 +246,25 @@ article h2 {
   cursor: pointer;
 }
 
+/* Isso garante que o link se comporte como um bloco e não quebre o layout */
+#projeto-container .projeto>a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  /* Remove sublinhados indesejados */
+}
+
 #projeto-container .foto {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
+}
+
+#projeto-container .paragrafo {
+  font-size: 0.9em;
+  color: var(--texto);
 }
 
 footer {
@@ -302,7 +315,7 @@ footer a:hover {
     max-width: 80%;
   }
 
-  #projeto-container .foto {
+  #projeto-container .foto>a {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
