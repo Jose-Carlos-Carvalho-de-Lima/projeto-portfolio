@@ -156,6 +156,14 @@ article h2 {
   color: var(--destaque);
   margin-bottom: 10px;
 }
+.titulo, .projeto-info a {
+  text-decoration: none; 
+  color: var(--destaque);
+}
+.projeto-info .titulo span:hover {
+  background-color: transparent; /* Garante que não haja fundo */
+  color: var(--destaque-inverso);                   /* Muda apenas a cor das letras */
+}
 
 #skill-container {
   display: grid;
